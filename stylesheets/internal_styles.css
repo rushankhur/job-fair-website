@@ -1,0 +1,84 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* TABLE FONT SIZE */
+.table-condensed{
+    font-size: 13px;
+}
+/* BUTTONS ON THE LEFT SIDE */
+.margin-bottom{
+    margin-bottom: 10rem;
+}
+/* SMALL 'EDIT' BUTTONS */
+.btn-group-xs > .btn, .btn-xs {
+    padding: .25rem .4rem;
+    font-size: .875rem;
+    line-height: .5;
+    border-radius: .2rem;
+}
+/* CARD WIDTH WITHIN 'EDIT ...' PHP PAGES*/
+.card-custom-width {
+    width: 50rem !important;
+}
+
+.messagesDiv {
+    margin: 0;
+    width: 100%;
+}
+
+
+.detailsLabel{
+    font-weight: bold;
+}
+
+#companyDetailsDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.compContactList{
+    justify-content: space-between;
+}
+
+.welcomeMessage{
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer styling   */
+.footer-bar {
+    padding: 30px 0;
+    color: #FFFFFF;
+    background: #343a40;
+}
+
+/* Footer links hovering */
+.text-white-link {
+    color: #FFFFFF;
+}
+
+.text-white-link:hover {
+    color: #007bff!important;
+    text-decoration: none;
+}
+
+/* Button 'go to top' within the footer */
+.btn-go-to-top {
+    width: 50px;
+    height: 50px;
+    background: #A29F9F;
+    text-align: center;
+    color: white;
+    line-height: 45px;
+}
+.btn-go-to-top:focus,
+.btn-go-to-top:hover {
+    color: white;
+}
+.btn-go-to-top:hover {
+    background: #CCC7C7;
+}

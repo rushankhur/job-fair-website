@@ -1,0 +1,154 @@
+/*CSS for Navigation Bar */
+
+.navBar {
+    font-size: 18px;
+    font-family: "Helvetica Neue";
+}
+
+/*******************************************************************************/
+
+/* CSS for any Header text */
+
+/* Brief Summary Header */
+.briefSummaryHeader {
+    font-family: "Helvetica Neue";
+}
+
+/* Job Information table Header */
+.jobInfoHeader {
+    font-family: "Helvetica Neue";
+    font-size: 30px;
+}
+
+/* Attendance table Header */
+.attendanceHeader {
+    font-family: "Helvetica Neue";
+    font-size: 30px;
+}
+
+/* Job Position Header */
+.jobPositionHeader {
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue";
+    font-size: 30px;
+}
+
+/* Employee table Header */
+.employerHeader {
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+}
+
+/* Presenters table header */
+.presentersHeader {
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+}
+
+/* Job Type table header */
+h4.jobTypeHeader {
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+}
+
+/* Paid table header */
+h4.paidHeader {
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+}
+
+/* Is Graduating table Header */
+h4.isGraduatingHeader {
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+}
+
+/*******************************************************************************/
+
+/* CSS for the Tables */
+
+/* Job Fair Info Table */
+.jobInfoTable {
+    margin-top: 20px;
+}
+
+/* Student Table */
+.studentTable {
+}
+
+/* Employer Table */
+.employerTable {
+    margin-right: 30px;
+}
+
+/* Presenters table */
+.presentersTable {
+    width: 60%;
+    margin-left: 80px;
+}
+
+/* Paid table */
+.paidTable {
+    left: 30px;
+}
+
+/* Is Graduating table */
+.isGraduatingTable {
+    left: 40px;
+}
+
+/* Job Type Table */
+
+.jobTypeTable {
+
+}
+
+.jobTypeTable .jobTypeRows {
+    border-color: black;
+}
+
+/* Add borders to the Job Fair Info table */
+.jobInfoTable .jobInfoRows {
+    border-color: black;
+}
+
+/* Add borders to the student table */
+.studentTable .studentRows {
+    border-color: black;
+}
+
+/* Add borders to the employer table */
+.employerTable .employerRows {
+    border-color: black;
+}
+
+/* Add borders to the Presenters table */
+.presentersTable .presentersRows {
+    border-color: black;
+}
+
+/* Add borders to the Job Type table */
+.jobTypeTable .jobTypeRows {
+    border-color: black;
+}
+
+/* Add borders to the Paid table */
+.paidTable .paidRows {
+    border-color: black;
+}
+
+/* Add borders to the Is Graduating table */
+.isGraduatingTable .isGraduatingRows {
+    border-color: black;
+}
+
+/*******************************************************************************/
+
+/* CSS for the Footer */
+
+.main-footer {
+    font-size: 18px;
+    font-family: "Helvetica Neue";
+    width: 80px;
+
+}

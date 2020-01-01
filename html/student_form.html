@@ -1,0 +1,249 @@
+<!-- Hello! -->
+
+<?php require_once '../../utilities/functions.php';?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../stylesheets/bootstrap.css">
+    <link href="../stylesheets/carousel.css" rel="stylesheet">
+    <link href="../stylesheets/styles.css" rel="stylesheet">
+    <link href="../stylesheets/form_reg.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Title of the page -->
+    <title> Student Form </title>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        .studentHead {
+            background-color: #214365;
+            color: #fff;
+            /* Background Gradient for Complementary Colors */
+
+            /* background-color: #214365; test*/
+            /* For WebKit (Safari, Chrome, etc)*/
+            background: #A8C0D8 -webkit-gradient(linear, right top, right bottom, from(#214365), to(#A8C0D8)) no-repeat;
+            /*Mozilla,Firefox/Gecko */
+            background: #A8C0D8 -moz-linear-gradient(top, #214365, #A8C0D8) no-repeat;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+            <a class="navbar-brand ml-3" href="../index.html">
+                <img src="../images/orange_jobfair_logo.png" alt="IT Job Fair" class="img-logo">
+            </a>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active mx-3">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmployers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industry</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownEmployers">
+                            <a class="dropdown-item" href="essential_information.html">Essential Information</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="previous_participants.html">Previous Participants</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="faq_employer.html">FAQ for Employers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownStudents">
+                            <a class="dropdown-item" href="who_can_attend.html">Who can attend?</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="how_to_prepare.html">How to Prepare</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="faq_student.html">FAQ for Students</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active mx-3">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownRegistration" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownRegistration">
+                            <a class="dropdown-item" href="employer_form.html">Industry</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="student_form.html">Student</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="btn btn-primary my-2 my-sm-0 px-3 py-2" href="login.html" role="button">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="mb-5">
+        <div class="container marketing" style="margin-top:100px">
+            <!-- Form  -->
+            <div class="modal-content col-md-10">
+                <div class="modal-header">
+                    <h3>Student Registration</h3>
+                </div>
+                <div class="modal-body p">
+                    NSCC students who plan to attend the IT Campus Job Fair on Wednesday, March 6th are required to complete
+                    this online form to register for the event.
+
+                    Registration is important in order to help job fair organizers plan for catering and prepare name tags. <br>
+                </div>
+
+
+                <div class="card employerForm mb-5">
+                    <div class="card-header studentHead">
+                        <h4 class="card-title">Registration Form(<span class="req"><small> required
+                                <span class="star">*</span></small></span>)</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form name="studentForm" method="post" role="form" action="submit_student_form.php" onsubmit="return validateform()">
+                            <div class="form-group form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">First Name<span class="star">*</span></label>
+                                    <input type="text" class="form-control" id="firstName" name="studentFirstName"
+                                        placeholder="First Name">
+                                    <small id="firstNameHelp" class="form-text text-muted"></small>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Last Name<span class="star">*</span></label>
+                                    <input type="text" class="form-control" id="lastName" name="studentLastName"
+                                        placeholder="Last Name">
+                                    <small id="lastNameHelp" class="form-text text-muted"></small>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentID">Student ID<span class="star">*</span> (ie: w0123456)</label>
+                                <input type="text" class="form-control" id="studentID" name="studentWNumber" placeholder="Student ID">
+                                <small id="studentIDHelp" class="form-text text-muted">Eg. w0410000</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="ITProgram">What program are/were you enrolled in?<span
+                                        class="star">*</span></label>
+                                <select class="form-control" id="ITProgram" name="programID">
+                                    <?php
+                                    // The following php is used to get a list of the program IDs being offered by
+                                    // the college at the present year.
+                                    $conn = connect();
+                                    $jobFairYear = getJobFairYear(); // getJobFairYear returns the year of the next job fair
+                                    //This query retrieves all the programs that are allowed to attend the fair this year:
+                                    $query = "SELECT programID, programName from program where jobFairYear = $jobFairYear";
+                                    $result = doQuery($conn, $query);
+                                    // While loop adds option tags and processes MySQL query results.
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        $programName = $row['programName'];
+                                        $programID = $row['programID'];
+                                        print '<option value="' . $programID . '"> ' . $programName . '</option>';
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentCampus">What campus are/were you attending?<span class="star">*</span></label>
+                                <select class="form-control" id="studentCampus" name="studentCampus">
+                                    <option value="Akerley Campus">Akerley</option>
+                                    <option value="Annapolis Valley Campus">Annapolis Valley</option>
+                                    <option value="Burridge Campus">Burridge</option>
+                                    <option value="COGS Campus">Centre of Geographic Sciences</option>
+                                    <option value="Cumberland Campus">Cumberland</option>
+                                    <option value="IT Campus" selected>Institute of Technology</option>
+                                    <option value="Ivany Campus">Ivany</option>
+                                    <option value="Kingstec Campus" Campus">Kingstec</option>
+                                    <option value="Lunenburg Campus">Lunenburg</option>
+                                    <option value="Marconi Campus">Marconi</option>
+                                    <option value="Pictou Campus">Pictou</option>
+                                    <option value="Shelburne Campus">Shelburne</option>
+                                    <option value="Strait Area Campus">Strait Area</option>
+                                    <option value="Truro Campus">Truro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="graduateYear">What is your expected graduation year?<span class="star">*</span></label>
+                                <select class="form-control" id="graduateYear" name="studentGraduatingYear">
+                                </select>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="hidden" value=0 id="defaultCheck1" name="photoConsent">
+                                <input class="form-check-input" type="checkbox" value=1 id="defaultCheck1" name="photoConsent">
+                                <label class="form-check-label" for="defaultCheck1"> I consent that the photographs, video or audio taken of me by the photographer or
+                                    videographer representing NSCC may by used by NSCC in all materials related to the marketing and
+                                    communications of NSCC programs and services. The photographs may be used in all forms of communications, including but not limited to brochures, fundraising materials, displays, as well as social, digital and
+                                    mainstream media relating to the promotion of NSCC and the NSCC Foundation. </label>
+                                </div>
+                            </div>
+                            <div class="submitButton text-center">
+                                <button type="submit" class="btn btn-primary mb-2" id="submit" name="regStudent">Submit Registration</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- FOOTER -->
+     <footer id="footer" class="footer-bar">
+        <div class="d-flex flex-wrap">
+            <div class="p-2 mx-auto">
+                <img src="../images/bird_logo_black.png" width="60" alt="Black bird Logo">
+                &copy; 2019 Blackbird Project
+            </div>
+            <div class="py-2 align-self-center mx-auto">
+                <a class="text-black" href="../html/privacy_policy.html">Privacy</a> &middot;
+                <a class="text-black" href="../html/terms_and_conditions.html">Terms</a>
+            </div>
+            <div class="py-2 ml-0 mr-4">
+                <a href="#"><button type="button" class="btn btn-go-to-top">
+                        <em class="fas fa-angle-up"></em>
+                    </button></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../scripts/form_validation_student.js"></script>
+</body>
+
+</html>
